@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCOUNT_ID = "${env.AWS_ACCOUNT_ID}"
+        AWS_ACCOUNT_ID = credentials('AWS_ACCOUNT_ID')
         AWS_REGION     = "ap-south-1"
 
         // --- SERVICE CONFIGURATION ---
